@@ -11,11 +11,15 @@
 
 <body>
     <h1>
-        Prova
+        Treni
     </h1>
-
-    <img src="{{ Vite::asset('resources/img/duck.jpg') }}" alt="Paperella Laravel Template">
-
+    <ul>
+        @foreach ($trains as $train)
+            <li>
+                {{ $train }}
+            </li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
