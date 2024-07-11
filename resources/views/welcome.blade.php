@@ -16,7 +16,19 @@
     <ul>
         @foreach ($trains as $train)
             <li>
-                {{ $train }}
+                <div>
+                    <h6>
+                        <b>
+                            {{ $train->company }}
+                        </b>
+                    </h6>
+                    <h6>
+                        {{ $train->from }} &RightArrow; {{ $train->destination }}
+                    </h6>
+                    <h6>
+                        {{ $train->start_time }}
+                    </h6>
+                </div>
             </li>
         @endforeach
     </ul>
